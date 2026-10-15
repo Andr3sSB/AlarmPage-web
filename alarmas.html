@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Alarm Clock</title>
+        <link rel="stylesheet" href="alarmas.css">
+    </head>
+
+    <body>
+        <header class="banner">
+            <h1>Alarm Clock</h1>
+        </header>
+        <main class="alarma-app">
+
+            <section class="tarjeta">
+                <p id="reloj">00:00:00</p>
+                <button type="button" id="boton-detener" hidden>Stop</button>
+            </section>
+
+            <section class="tarjeta">
+                <h2>New Alarm</h2>
+                <form id="formulario-alarma">
+                    <label for="hora-alarma">Time</label>
+                    <input type="time" id="hora-alarma" required>
+                    <button type="submit" id="boton-guardar">Add alarm</button>
+                    <button type="button" id="boton-cancelar" hidden>Cancel</button>
+                </form>
+                <p id="mensaje-error"></p>
+            </section>
+
+            <section class="tarjeta">
+                <h2>Alarms</h2>
+                <ul id="lista-alarmas"></ul>
+            </section>
+        </main>
+
+        <script src="alarmas.js"></script>
+    </body>
+</html>

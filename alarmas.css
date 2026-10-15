@@ -1,0 +1,145 @@
+[hidden] {
+    display: none !important;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f2f4f8;
+    color: #444;
+}
+
+.alarma-app {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 24px;
+}
+
+.tarjeta {
+    background-color: white;
+    border: 1px solid #d5dbe6;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.tarjeta h2 {
+    color: #12646e;
+    font-size: 18px;
+    margin: 0 0 12px;
+}
+
+#reloj {
+    font-size: clamp(56px, 14vw, 110px);
+    font-weight: bold;
+    text-align: center;
+    color: #12646e;
+    background-color: #eef6f7;
+    border-radius: 12px;
+    padding: 32px 16px;
+    margin: 0 0 12px;
+    letter-spacing: 2px;
+    font-variant-numeric: tabular-nums;
+}
+
+#boton-detener {
+    display: block;
+    margin: 0 auto;
+}
+
+#reloj.sonando {
+    background-color: #c0392b;
+    color: white;
+}
+
+#formulario-alarma {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#hora-alarma {
+    font-size: 18px;
+    padding: 6px 10px;
+    border: 1px solid #b7c0d0;
+    border-radius: 6px;
+}
+
+#mensaje-error {
+    color: #c0392b;
+    font-weight: bold;
+    margin: 8px 0 0;
+    min-height: 1.2em;
+}
+
+button {
+    background-color: #12646e;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 14px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0d4a52;
+}
+
+#boton-cancelar {
+    background-color: #7a8599;
+}
+
+#boton-detener,
+button.borrar {
+    background-color: #c0392b;
+}
+
+#boton-detener:hover,
+button.borrar:hover {
+    background-color: #962d22;
+}
+
+#lista-alarmas {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#lista-alarmas li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0;
+    border-bottom: 1px solid #e3e8f0;
+}
+
+#lista-alarmas li:last-child {
+    border-bottom: none;
+}
+
+#lista-alarmas span {
+    flex: 1;
+    font-size: 22px;
+    font-weight: bold;
+    color: #12274d;
+}
+
+#lista-alarmas input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.banner {
+    background-color: #12646e;
+    padding: 28px 0;
+    text-align: center;
+}
+
+.banner h1 {
+    color: white;
+    font-size: 36px;
+    margin: 0;
+}
